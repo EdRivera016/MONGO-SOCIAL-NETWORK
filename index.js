@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mongo-social-ne
 }).then(() => {
   console.log('Connected to MongoDB');
   app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
   });
 }).catch((error) => {
   console.error('Error connecting to MongoDB', error);
